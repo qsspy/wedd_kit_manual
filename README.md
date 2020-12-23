@@ -1,3 +1,2 @@
-It's probably my first bigger website.
-Check it LIVE on :
-https://qsspy.github.io/colmar_academy/
+Link do instrukcji obsługi aplikacji :
+https://qsspy.github.io/wedd_kit_manual/index
