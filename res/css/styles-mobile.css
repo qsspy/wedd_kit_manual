@@ -1,0 +1,109 @@
+@media only screen and (max-width:768px){
+    body {
+        opacity: 0.9;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    header img{
+        
+        height: 30px;
+        width: auto;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .information {
+        padding-right: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .information .info-bar {
+        width: 100%;
+        margin: none;
+        margin-left:0;
+        align-items: center;
+    }
+
+    .information .info-block {
+        border: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+
+    }
+
+    .information .info-block img{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .information .info-block .text-box {
+        margin-top: 2rem;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .courses {
+        background-color: white;
+        padding: 2rem 2rem;
+    }
+
+    .courses .content-box {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-self: flex-start;
+        width:100%
+    }
+
+    .courses .block {
+        background-color: rgb(216,216,216);
+        border-radius: 0;
+        margin: 0.25rem 0;
+    }
+
+    .courses .block .text-box {
+        height: fit-content;
+        max-height: unset;
+        
+    }
+
+    .courses .block .small-text,
+    .courses .block .tiny-text{
+    margin-bottom: 0;
+    }
+
+    .exhibit-container .main {
+        
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .exhibit-container .information {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .information .main video {
+        margin-bottom: 0;
+    }
+}
