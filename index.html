@@ -17,6 +17,7 @@
       <li><a href="#calendar_header">Kalendarz</a></li>
       <li><a href="#finances_header">Finanse zespołu</a></li>
       <li><a href="#song_book_header">Korzystanie ze śpiewnika</a></li>
+      <li><a href="#contact_header">Kontakt z developerem</a></li>
       
   </ol>
 
@@ -93,18 +94,95 @@
     <h2 id="finances_header">3. Finanse zespołu</h2>
     <p>
         Manager finansów jest prosty w swojej budowie. Można w nim dodawać wydatki oraz przychody. "Kafelki" w managerze również 
-        możemy rozwijąć. Znajdują się opisy oraz informacje kto dodał dany wpis. Warto nadmienić, że wpisów nie można 
+        możemy rozwijąć. Znajdują się tam opisy oraz informacje kto dodał dany wpis. Warto nadmienić, że wpisów nie można 
         usuwać ani edytować.
     </p>
   </div>
 
   <div class="manual_section">
     <h2 id="song_book_header">4. Korzystanie ze śpiewnika</h2>
-    <p>TODO</p>
+    <p>
+        Aby skorzystać ze śpiewnika na początku musimy stworzyć folder z plikami w formacie PDF. Robimy to najlepiej z użyciem 
+        komputera. Gotowy folder wrzucamy do pamięci telefonu/tableta.
+    </p>
+    <p>
+        Aby stworzyć playlistę nawigujemy do sekcji tworzenia ( Śpiewnik -> Twórz Playlistę). Aby zaimportować PDF klikamy na ikonkę 
+        folderu w prwym górnym rogu. W eksploratorze znajdujemy nasz folder i <strong>klikamy na dowolny plik PDF w tym folderze</strong>.
+        Pełna lista PDFów powinna pojawić się na prawej stronie ekranu. Posiadając listę utworów możemy przystąpić do tworzenia setów. 
+        Gdy sety są już gotowe możemy zapisać playlistę.
+    </p>
+    <p>
+        Aby otworzyć utworzoną playlistę nawigujemy do sekcji playlist ( Śpiewnik -> Otwórz Playlistę). Oczom ukażą nam się wcześniej 
+        zapisane playlisty oraz opcja bezpośredniego otwarcia plików z folderu. Opcja ta jest przydatna wtedy, gdy korzystamy ze 
+        współdzielonego śpiewnika (o tym póżniej), gdyż wtedy tylko host musi stworzyć playlistę, reszta zespołu musi jedynie mieć otwartą 
+        bazę PDFów z folderu. Niemniej jednak zaleca się stworzenie playlisty przez wszystkich członków, gdyż wtedy przechodzenie między 
+        stronami śpiewnika będzie płynniejsze.
+    </p>
+    <p>
+        Po wybraniu playlisty ukaże nam się czarna strona z tekstem z pliku PDF. Między stronami możemy nawigować przez przesunięcie 
+        palcem, lecz może to być uciążliwe przy przybliżeniu tekstu, dlatego <strong>zalecam nawigację między stronami poprzez 
+        dotknięcie palcem na prawej oraz lewej krawędzi ekranu.</strong> Wtedy natychmiastowo przechodzimy między stronami bez 
+        konieczności przesuwania palcem.
+    </p>
+    <p>
+        Po "tapnięciu" na środku tekstu ukaże nam się interfejs użytkownika. Interfejs składa się z :
+    </p>
+    <ol>
+        <li>paska wyszukiwania - góra ekranu</li>
+        <li>przycisku szybkiego powrotu - górny prawy róg</li>
+        <li>przycisk łączności Bluetooth - prawy-górny przycisk</li>
+        <li>przycisk notatek - prawy-dolny przycisk</li>
+        <li>przycisk kontrolowanych przejść - lewy-górny przycisk</li>
+        <li>przycisk widoczności nastęonego utworu - lewy-dolny przycisk</li>
+    </ol>
+    <p>
+        Pasek wyszukiwania jest dość intuicyjny, aby rozwinąć listę wyszukiwania należy kliknąć na środek paska.
+    </p>
+    <p>
+        Przycisk szybkiego powrotu umożliwia nam szybki powrót do utworu, który był otwarty przed wyszukiwaniem. Funkcja ta jest 
+        przydatna wtedy, gdy na życzenie klienta musimy przeskoczyć do innej piosenki, a następnie chcemy szybko wrócić do ostatnio 
+        otworzonej piosenki z playlisty bez konieczności pamiętania na czym skończyliśmy.
+    </p>
+    <p>
+        Przycisk łączności Bluetooth przenosi nas do panelu bluetooth, gdzie możemy nawiązać łączność z resztą zespołu (o tym później).
+    </p>
+    <p>
+        Przycisk notatek przenosi nas do sekcji notatek (o tym później).
+    </p>
+    <p>
+        Przycisk kontrolowanych przejść umożliwia nam przejścia do piosenek otwartych przez hosta tylko za naszą zgodą.
+    </p>
+    <p>
+        Przycisk widoczności następnego utworu umożliwia nam pokazanie pół-przezroczystego paska na górze ekranu zawierającego nazwę 
+        następnego utworu z playlisty.
+    </p>
+    <p>
+        Panel łączności bluetooth zapewnia możliwość nawiązania łączności z zespołem. Łączność działa na zasadzie relacji 
+        Host-Client (master-slave). Polega to na tym że Host podczas nawigacji pomiędzy stronami wysyła o tym informację do Clientów 
+        po czym Clienci reagują na tę informację przez automatyczne przejście do strony Hosta. Aby zostać Hostem należy wybrać opcję 
+        "Zostań hostem". Aby zostać Clientem należy wybrać opcję "Szukaj urządzeń i połącz się". Ukaże nam się wtedy lista sparowanych 
+        urządzeń. 
+        <strong>
+            Jeżeli nie widzimy urządzenia Hosta na liście należy pamiętać, aby się z nim sparować. Sparować urządzenia można w 
+            ustawieniach systemowych w sekcji Bluetooth.
+        </strong>
+        Warto nadmienić, że urządzenia paruje się tylko raz. Przy następnych połączeniach nie trzeba tego robić. Zależnie od tego czy 
+        staliśmy się Hostem lub Clientem zasygnalizuje nam to kolor ikony i treść po prawej stronie. Gdy połączenie zostanie nawiązane 
+        możemy wrócić do playlisty i korzystać ze współdzielonego śpiewnika :). 
+    </p>
+    <p>
+        Śpiewnik posiada również notatnik. Notatnik składa się z dwóch pól. Górne pole to pole dedykacji. Jak sama nazwa wskazuje zapisujemy 
+        tam dedykacje, ale w sumie możemy tam zapisywać cokolwiek chcemy. Dolne pole to pole harmonogramu przew. Możemy tam wpisywać np. 
+        harmonogram kuchni lub inne istotne wydarzenia. Harmonogram posiada także dodatkową funkcjonalność polegającym na tym, że przy 
+        nawigacji między stronami śpiewnika, jeżeli dane wydarzenie nastąpi za mniej niż 10 minut to zostanie wyświetlony odpowiedni komunikat 
+        przypominający o danym wydarzeniu. Nareszcie zespół będzie pamiętał o ciepłych daniach i polubi się z obsługą sali :).
+    </p>
   </div>
 
-
-    
-
+  <div class="manual_section">
+      <h2 id="contact_header">Kontakt : </h2>
+      <p>W razie pytań pisz do mnie ;)</p>
+      <p>d.filipek.dev@gmail.com</p>
+  </div>
 </body>
 </html>
