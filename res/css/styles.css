@@ -1,3 +1,54 @@
 body {
-    background-color: #553C50;
+    background-color: #452C40;
 }
+
+.manual_section {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+
+
+.nav {
+    background-color :ivory;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav a {
+    font-size: 1.2em;
+}
+
+.nav li {
+    margin-bottom : 5px;
+}
+
+
+
+h1 {
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    color: antiquewhite;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
