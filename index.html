@@ -21,6 +21,7 @@
         <li><a href="#calendar_header">Kalendarz</a></li>
         <li><a href="#finances_header">Finanse zespołu</a></li>
         <li><a href="#song_book_header">Korzystanie ze śpiewnika</a></li>
+        <li><a href="#chords_header">Definiowanie akordów</a></li>
         <li><a href="#contact_header">Kontakt z developerem</a></li>
         
     </ol>
@@ -36,7 +37,7 @@
           do dowolnej liczby zespołów jeżeli założyciel zespołu przydzieli mu prawa dostępu.
       </p>
       <p>
-          Każde użytkownik może założyć maksymalnie jeden zespół. Po założeniu zespołu użytkownik staje się <strong>adminem</strong>, 
+          Każdy użytkownik może założyć maksymalnie jeden zespół. Po założeniu zespołu użytkownik staje się <strong>adminem</strong>, 
           czyli ma nieograniczone prawa do zespołu i może przydzielać dostęp innym użytkownikom. Na początku może to zabrzmieć skoplikowanie, 
           ale w praktyce jest to bardzo proste ;). System ten zapewnia pełną kontrolę nad tym kto będzie mógł edytować kalendarz, kto będzie mógł 
           usuwać iprezy, określa dostęp do managera budżetu itp.
@@ -62,13 +63,13 @@
         nie wymaga połączenia z internetem ale jest tylko do odczytu. Pokazuje on ostatnią wersję kalendarza otwartego w trybie 
         <strong>Online</strong>. Trybu <strong>Offline</strong> używamy wtedy, gdy nie mamy potrzeby edycji kalendarza, a checemy tylko 
         po prostu podejrzeć jakieś informacje na temat danej imprezy, lub po gdy nie mamy dostępu do internetu. Tryb 
-        <strong>Online</strong> oferuje nam odczyt kalenarza z możliwością edycji.
+        <strong>Online</strong> oferuje nam odczyt kalendarza z możliwością edycji.
     </p>
     <p>
         W oknie kaledarza imprezy widziane są jako "kafelki" podobnie jak w konsoli zespołu. Widzimy na nich nazwę, datę oraz kwotę 
         wynagrodzenia za imprezę. Po kliknięciu na kafelek oczom ukazuje się pełny formularz dotyczący imprezy. Warto nadmienić, że 
         w formularzu znajdują się przyciski które łączą nas z numerem telefonu młodego/młodej. Są tam również przyciski, które 
-        na podstawie podanych danych adresowych np. sali weselnej natychmiastowo pokazują nam jej lokalizację w Google Maps. W sład
+        na podstawie podanych danych adresowych np. sali weselnej natychmiastowo pokazują nam jej lokalizację w Google Maps. W skład
         danych adresowych wchodzi pole <strong>Gmina/Dzielnica</strong>. Nie musimy podawać tu gminy albo dzielnicy, może to być np. 
         kod pocztowy miejscowośc lub inne dane kluczowe. Wypełniamy to pole dlatego, gdyż może istnieć kilka miejscowości o tej samej 
         nazwie a opisywane pole pozwala ją jednoznacznie zidentyfikować.
@@ -138,7 +139,8 @@
         <li>przycisk łączności Bluetooth - prawy-górny przycisk</li>
         <li>przycisk notatek - prawy-dolny przycisk</li>
         <li>przycisk kontrolowanych przejść - lewy-górny przycisk</li>
-        <li>przycisk widoczności nastęonego utworu - lewy-dolny przycisk</li>
+        <li>przycisk widoczności nastęonego utworu - lewy-środkowy przycisk przycisk</li>
+        <li>przycisk widoczności akordów - lewy-dolny przycisk przycisk</li>
     </ol>
     <p>
         Pasek wyszukiwania jest dość intuicyjny, aby rozwinąć listę wyszukiwania należy kliknąć na środek paska.
@@ -162,6 +164,9 @@
         następnego utworu z playlisty.
     </p>
     <p>
+        Przycisk widoczności akordów uwidacznia stworzone przez użytkownika akordy w managerze akordów (o tym później).
+    </p>
+    <p>
         Panel łączności bluetooth zapewnia możliwość nawiązania łączności z zespołem. Łączność działa na zasadzie relacji 
         Host-Client (master-slave). Polega to na tym że Host podczas nawigacji pomiędzy stronami wysyła o tym informację do Clientów 
         po czym Clienci reagują na tę informację przez automatyczne przejście do strony Hosta. Aby zostać Hostem należy wybrać opcję 
@@ -182,7 +187,37 @@
         nawigacji między stronami śpiewnika, jeżeli dane wydarzenie nastąpi za mniej niż 10 minut to zostanie wyświetlony odpowiedni komunikat 
         przypominający o danym wydarzeniu. Nareszcie zespół będzie pamiętał o ciepłych daniach i polubi się z obsługą sali :).
     </p>
-    <p><strong>Aby usunąć wpisy w notatniku należy je przesunąć palcem w prawo lub w lewo.</strong></p>
+    <p>
+        <strong>Aby usunąć wpisy w notatniku należy je przesunąć palcem w prawo lub w lewo.</strong>
+    </p>
+  </div>
+  <div class="manual_section">
+    <h2 id="chords_header">5. Definiowanie akordów</h2>
+    <p>
+        W sekcji Śpiewnika możemy wejść do managera akordów klikając na przycisk "Dodaj akordy". Aby dodać akordy musimy na początku 
+        wybrać utwór. Robimy to poprzez kliknięcie przycisku z folderem. Po wyborze utworu możemy dodawać akordy przy pomocy przycisku z 
+        "plusikiem". Każdy nowy "kafelek" reprezentuje jeden wiersz akordów. Wiersze możemy usuwać poprzez przesunięcie palcem w prawo 
+        lub w lewo. Kiedy wypiszemy już wszystkie akordy, możemy przejść do <strong>Podglądu</strong>.
+    </p>
+    <p>
+        W podglądzie możemy zobaczyć jak pole z akordami komponuje się z utworem. W oknie tym możemy dopasować pozycję oraz wielkość 
+        pola jeżeli nam nie odpowiada. Ważne jest aby na początku przybliżyć oraz ustawić tekst tak jakbyśmy to robili we właściwym 
+        śpiewniku. Okienko z akordami nie jest częścia pliku PDF. Jest jedynie nakładką na ekran, dlatego podczas korzystania ze śpiewnika 
+        gdy będziemy manipulować tekstem, akordy nie będą na to reagować. Ważne jest więc ostateczne dopasowanie. Gdy już to zrobimy możemy 
+        zapisać akordy. Od tej pory będziemy mogli z nich korzystać w śpiewniku.
+    </p>
+    <p>
+        Akordy możemy eksportować do pliku. Następnie plik ten mogą zaimportować inni członkowie zespołu. Dodawanie akordów do 
+        kilkudziesięciu utworów (a nawet więcej) na wielu urządzeniach może być uciążliwe, dlatego w tej sytuacji zalecam korzystanie 
+        z tej opcji. Jeżeli rozdzielczość urządzenia osoby dzielącej się akordami znacząco różni się od naszej może zajść potrzeba 
+        edycji pozycji akordów.
+    </p>
+    <p>
+        W Śpiewniku utworzone akordy możemy przesuwać lecz ruch ten nie będzie zapisany. Akordy można również transponować 
+        używając przycisków po lewej. W przypadku półtonów algorytm będzie transponował akordy z przyrostkami 
+        <strong>"is"</strong> (np. Fis) oraz <strong>"#"</strong> (np. D#m). Z przyrostkami "♭" oraz "es" transpozycja nie będzie działać 
+        poprawnie.
+    </p>
   </div>
 
   <div class="manual_section">
